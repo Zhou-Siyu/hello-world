@@ -19,7 +19,6 @@ int main()
 	DateTime dt;
 	dt.showTime();
 	dt.showMoon();
-	printf("test\n");
 	return 0;
 }
 
