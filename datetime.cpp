@@ -24,7 +24,7 @@ int main()
 
 DateTime::DateTime()
 {
-	std::cout << "ÊäÈëµ±Ç°Ê±¼ä(½öÖ§³Ö2020Äê)£º" << std::endl;
+	std::cout << "è¾“å…¥å½“å‰æ—¶é—´(ä»…æ”¯æŒ2020å¹´)ï¼š" << std::endl;
 	scanf("%d/%d/%d %d:%d:%d", &year, &month, &day, &hour, &minute, &second);
 }
 DateTime::~DateTime() 
@@ -33,7 +33,7 @@ DateTime::~DateTime()
 }
 void DateTime::showTime()
 {
-	printf("µ±Ç°Ê±¼ä£º%d/%d/%d %d:%d:%d\n",
+	printf("å½“å‰æ—¶é—´ï¼š%d/%d/%d %d:%d:%d\n",
 	year, month, day, hour, minute, second);
 }
 void DateTime::showMoon()
@@ -47,15 +47,15 @@ void DateTime::showMoon()
 	month_1--;
 	day_1 = n_day - b[month_1] + 1;
 	if (month_1 == 0) {
-		printf("Å©ÀúÊ±¼ä£º2019/12/%d %d:%d:%d\n",
+		printf("å†œå†æ—¶é—´ï¼š2019/12/%d %d:%d:%d\n",
 		day_1, hour, minute, second);
 		return;
 	} else if (month_1 == 5) {
-		printf("Å©ÀúÊ±¼ä£º%d/ÈòËÄÔÂ/%d %d:%d:%d\n",
+		printf("å†œå†æ—¶é—´ï¼š%d/é—°å››æœˆ/%d %d:%d:%d\n",
 		year, day_1, hour, minute, second);
 		return;
 	}
 	if (month_1 > 5) month_1--;
-	printf("Å©ÀúÊ±¼ä£º%d/%d/%d %d:%d:%d\n",
+	printf("å†œå†æ—¶é—´ï¼š%d/%d/%d %d:%d:%d\n",
 	year, month_1, day_1, hour, minute, second);
 }
