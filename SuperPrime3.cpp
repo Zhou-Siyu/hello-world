@@ -28,8 +28,8 @@ class BigInt {
 
 
 		
-//	private:
 		string num;
+	private:
 		BigInt sub(BigInt a, BigInt b) {
 			int lena = a.num.size(), lenb = b.num.size();
 			BigInt c(lena);
@@ -199,7 +199,7 @@ public:
 		}
 		return false;
   }
-//private:
+private:
   BigInt n;
   BigInt fastpow(BigInt a, BigInt b, BigInt mod) {
   	BigInt r("1"), base = a, two("2");
@@ -243,7 +243,7 @@ public:
 		}
     return false;
   }
-//private:
+private:
 	int a[1005];
   string sum() {
   	int i = 0, sum = 0;
