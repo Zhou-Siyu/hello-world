@@ -1,6 +1,5 @@
 //作业：删除多余的集合类，使用继承方法实现相同的功能。 
 #include <iostream>
-//判断一个数是否为素数 
 class Prime {
   public:
   	Prime():number(0) {
